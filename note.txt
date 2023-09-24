@@ -1,0 +1,46 @@
+1. Xóa cack: php artisan config:clear
+
+
+
+//list ob : $data = Category::all();
+       // $data = Category::all();
+      //lay item theo name
+        //$data = Category::where('name','Laptop')
+        //List Array : $data = Category::all()->toArray();
+        //list Json : $data = Category::all()->toJson();
+        //Lay ra 1 item: $data = Category::find(4);
+        //dem so item trong bang : $data = Category::count();
+        //them du lieu vao bang : 
+        // $data = new Category();
+        // $data->name='tin tuc';  
+        // $data->slug='tin-tuc';
+        // $data->save();
+        
+        // Category::create([
+        //     'name'=>'tin tuc khuyen mai111',
+        //     'slug'=>'tin-tuc-khuyen-mai111'
+        // ]);
+
+        //update du lieu
+        // $data=Category::find(4);
+        // $data->name = 'tin tuc khuyen mai1111';
+        // $data->slug = 'tin-tuc-khuyen-mai1111';
+        // $data->save();
+
+        //xoa du lieu theo ID: $data=Category::destroy(70);
+        //lay du lieu
+        // $data = DB::table('products')->select('*')->where('id','56')->orwhere('name','Oppo')->get();
+
+
+        // $data = DB::table('products')
+        // ->select('products.name','categories.name as tendanhMuc')
+        // ->join('categories','categories.id','=','products.category_id')
+        // ->where('categories.id','4')
+        // ->get();
+
+       //update theo dieu kien: $data = DB::table('categories')->where('id','4')->update(['name'=>'Dien thoai']);
+
+
+
+        
+       //dd($data);
